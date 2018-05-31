@@ -1,0 +1,108 @@
+body {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.greeting {
+  text-align: center;
+  color: #004e66;
+}
+
+.main-title, .site-title {
+  color: #FFFFFF;
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-margin-before:1px;
+  -webkit-margin-after:1px;
+}
+.main-title {
+  text-align: left;
+  background-color: #006494;
+}
+
+
+.site-title {
+  color: white;
+  background-color: #262626;
+  /*background: -webkit-linear-gradient(left top, #C82506, #fcbe32);*/
+  /*background: -o-linear-gradient(bottom right, #C82506, #fcbe32);*/
+  /*background: -moz-linear-gradient(bottom right, #C82506, #fcbe32);*/
+  /*background: linear-gradient(to bottom right, #C82506, #fcbe32);*/
+}
+
+.site-title {
+  color: white;
+  background-color: #262626;
+  /*background: -webkit-linear-gradient(left top, #C82506, #fcbe32);*/
+  /*background: -o-linear-gradient(bottom right, #C82506, #fcbe32);*/
+  /*background: -moz-linear-gradient(bottom right, #C82506, #fcbe32);*/
+  /*background: linear-gradient(to bottom right, #C82506, #fcbe32);*/
+}
+
+.feed-items{
+  padding-left: 0;
+}
+
+.feed-item {
+  padding: 0px;
+  font-size: smaller;
+  list-style-type: none;
+  border-bottom: 1px solid lightgray;
+  background: #fdfdfd;
+  /*font-weight: bold;*/
+  color: #262626;
+  text-shadow: 0 1px 1px #fff;
+}
+
+.feed-item:hover {
+  background: lightgray;
+}
+
+.feed-link:visited {
+  display: block;
+  color: #DC493A;
+  text-decoration: none;
+  /*cursor: auto;*/
+  white-space: nowrap;
+  font-weight: bold;
+  text-shadow: 0 1px 1px #f6f6f6;
+}
+
+.feed-link {
+  display: block;
+  color: black;
+  text-decoration: none;
+  /*cursor: auto;*/
+  white-space: nowrap;
+  font-weight: bold;
+  text-shadow: 0 1px 1px #f6f6f6;
+}
+
+.footer {
+  text-align: center;
+  color: #fcbe32;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 10px;
+}
+
