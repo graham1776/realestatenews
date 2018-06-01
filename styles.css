@@ -82,20 +82,21 @@ body {
   color: #fcbe32;
 }
 
-.column {
+/*.column {
     float: left;
     width: 50%;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-}
+}*/
 
 /* Clear floats after the columns */
-.row:after {
+/*.row:after {
     content: "";
     display: table;
     clear: both;
-}
+}*/
+
 .ul, menu, dir {
     display: block;
     list-style-type: disc;
@@ -103,6 +104,10 @@ body {
     -webkit-margin-after: 0em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
-    -webkit-padding-start: 10px;
+    -webkit-padding-start: 5px;
+
 }
 
+.col {
+  /* flex-grow: 0; */
+}
