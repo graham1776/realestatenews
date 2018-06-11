@@ -100,6 +100,7 @@ body {
 .ul, menu, dir {
     display: block;
     list-style-type: disc;
+    overflow: auto;
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
     -webkit-margin-start: 0px;
