@@ -23,20 +23,13 @@ body {
 .site-title {
   color: white;
   background-color: #262626;
+  overflow: auto;
   /*background: -webkit-linear-gradient(left top, #C82506, #fcbe32);*/
   /*background: -o-linear-gradient(bottom right, #C82506, #fcbe32);*/
   /*background: -moz-linear-gradient(bottom right, #C82506, #fcbe32);*/
   /*background: linear-gradient(to bottom right, #C82506, #fcbe32);*/
 }
 
-.site-title {
-  color: white;
-  background-color: #262626;
-  /*background: -webkit-linear-gradient(left top, #C82506, #fcbe32);*/
-  /*background: -o-linear-gradient(bottom right, #C82506, #fcbe32);*/
-  /*background: -moz-linear-gradient(bottom right, #C82506, #fcbe32);*/
-  /*background: linear-gradient(to bottom right, #C82506, #fcbe32);*/
-}
 
 .feed-items{
   padding-left: 0;
@@ -79,7 +72,7 @@ body {
 
 .footer {
   text-align: center;
-  color: #fcbe32;
+  /*color: #fcbe32;*/
 }
 
 /*.column {
