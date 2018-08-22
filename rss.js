@@ -12,6 +12,8 @@ var feedsLibrary = {
   pere: "https://www.perenews.com/feed/",
   bisnow: "https://www.bisnow.com/rss-feed/home",
   globest: "http://m.feedblitz.com/globest/national",
+  rentv: "http://fetchrss.com/rss/5ad0f27c8a93f8e6778b4567239708145.xml",
+  rcm: "http://fetchrss.com/rss/5ad0f27c8a93f8e6778b4567365828158.xml",
 }
 
 $.each(feedsLibrary, function(feedName, feedUrl) {
