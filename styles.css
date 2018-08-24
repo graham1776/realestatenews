@@ -9,23 +9,27 @@ body {
 }
 
 .main-title, .site-title {
-  color: #FFFFFF;
+  color: #black;
   padding: 5px;
   font-weight:bolder;  
   border-radius: 5px;
   -webkit-margin-before:1px;
   -webkit-margin-after:1px;
+  font-family: 'Open Sans', sans-serif;
 }
+
 .main-title {
   text-align: center;
-  font-weight:800;
-  background-color: #006494;
+  font-weight: bolder;
+  background-color: White;
+  border-style: solid;
+  border-color: white white black;
 }
 
 
 .site-title {
   /*color: white;*/
-  background-color: #262626;
+  background-color: #white;
   overflow: auto;
   font-weight:700;
   /* background: -webkit-linear-gradient(left top, #C82506, #fcbe32); */
@@ -35,16 +39,33 @@ body {
 }
 
 
+.navbar-brand{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+  font-size: 2.25em;
+  padding:0px;
+}
+
+.navbar{
+  border-style: solid;
+  border-color: white white black;
+  padding-bottom: 0px;
+  padding-top:0px;
+  
+}
+
+
 .feed-items{
   padding-left: 0;
 }
 
 .feed-item {
-  padding: 0px;
+  padding: 2px;
   font-size: smaller;
   list-style-type: none;
-  border-bottom: 1px solid lightgray;
-  background: #fdfdfd;
+  border: 1px dashed;
+  border-color: black white white white;
+  /*border-top: 1px dashed black;background: #fdfdfd;*/
   /*font-weight: bold;*/
   color: #262626;
   text-shadow: 0 1px 1px #fff;
