@@ -11,7 +11,7 @@ body {
 .main-title, .site-title {
   color: #black;
   padding: 5px;
-  font-weight:bolder;  
+  font-weight: bolder;  
   border-radius: 5px;
   -webkit-margin-before:1px;
   -webkit-margin-after:1px;
@@ -31,7 +31,9 @@ body {
   /*color: white;*/
   background-color: #white;
   overflow: auto;
-  font-weight:700;
+  font-size: 1.25em;
+  text-decoration: underline;
+  /*font-weight:700;*/
   /* background: -webkit-linear-gradient(left top, #C82506, #fcbe32); */
   /*background: -o-linear-gradient(bottom right, #C82506, #fcbe32);*/
   /*background: -moz-linear-gradient(bottom right, #C82506, #fcbe32);*/
@@ -42,7 +44,7 @@ body {
 .navbar-brand{
   font-family: 'Open Sans', sans-serif;
   font-weight: bolder;
-  font-size: 2.25em;
+  /*font-size: 2.25em;*/
   padding:0px;
 }
 
@@ -131,4 +133,9 @@ body {
   /* flex-grow: 0; */
   padding-right: 0px;
   padding-left: 0px;
+}
+
+a {
+    color: black;
+
 }
