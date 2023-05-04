@@ -16,22 +16,26 @@ var feedsLibrary = {
   rcm: "http://fetchrss.com/rss/5ad0f27c8a93f8e6778b4567365828158.xml",
 }
 
-$.each(feedsLibrary, function(feedName, feedUrl) {
-  var baseUrl = "http://query.yahooapis.com/v1/public/yql?q="
-  var queryString = encodeURI("SELECT * FROM feed WHERE url='" + feedUrl + "' LIMIT 5")
-  var format = "&format=json"
+function parseRSS(url, callback) {
+  var proxyUrl = "https://api.allorigins.win/get?url=" + encodeURIComponent(url);
+  $.getJSON(proxyUrl, function (data) {
+    var xml = $.parseXML(data.contents);
+    callback(xml);
+  });
+}
 
-  var rssFeedPath = baseUrl + queryString + format
+$.each(feedsLibrary, function (feedName, feedUrl) {
+  parseRSS(feedUrl, function (xml) {
+    var feedItems = $(xml).find("item");
 
-  $.getJSON(rssFeedPath, function(response) {
-    var feedItems = response.query.results.item
+    $.each(feedItems, function (index) {
+      var item = $(this);
+      var title = item.find("title").text();
+      var link = item.find("link").text();
 
-    $.each(feedItems, function( index ) {
-      var item = feedItems[index]
-
-      var ulElement = $('#' + feedName)
-      ulElement.append('<li class="feed-item"><a class="feed-link" target="_blank" href="' + item.link + '">' + item.title +'</a></li>')
-    })
-  })
-})
+      var ulElement = $("#" + feedName);
+      ulElement.append('<li class="feed-item"><a class="feed-link" target="_blank" href="' + link + '">' + title + "</a></li>");
+    });
+  });
+});
 
