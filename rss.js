@@ -20,15 +20,15 @@ function parseRSS(url, callback) {
   var proxyUrl = "https://api.allorigins.win/get?url=" + encodeURIComponent(url);
   $.getJSON(proxyUrl, function (data) {
     var xml = $.parseXML(data.contents);
-    callback(xml);
+    callback($(xml));
   });
 }
 
 $.each(feedsLibrary, function (feedName, feedUrl) {
   parseRSS(feedUrl, function (xml) {
-    var feedItems = $(xml).find("item");
+    var feedItems = xml.find("item");
 
-    $.each(feedItems, function (index) {
+    $.each(feedItems, function () {
       var item = $(this);
       var title = item.find("title").text();
       var link = item.find("link").text();
